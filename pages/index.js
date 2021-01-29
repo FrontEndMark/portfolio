@@ -146,4 +146,4 @@ function Home() {
     
 
 export default Home
-import './style.css'
+import './pages/style.css'
