@@ -1,6 +1,95 @@
 function Home() {
     return <div>
-        
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        :root {
+        --white: #f0f0f0;
+        --red: #D92A1A;
+        --blue: #A69E33;
+        --gray: #151826;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        *,
+        *::before,
+        *::after {
+        box-sizing: inherit;
+        }
+
+        html {
+            box-sizing: border-box;
+            /* Set font size for easy rem calculations
+            * default document font size = 16px, 1rem = 16px, 100% = 16px
+            * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+            */
+            font-size: 62.5%;
+            scroll-behavior: smooth;
+        }
+
+        @media (max-width: 75em) {
+            html {
+                font-size: 60%;
+            }
+        }
+
+        @media (max-width: 61.25em) {
+            html {
+                font-size: 58%;
+            }
+        }
+
+        @media (max-width: 28.75em) {
+            html {
+                font-size: 55%;
+            }
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 1.4;
+            color: var(--white);
+        }
+
+        h1,
+        h2 {
+            font-family: 'Raleway' sans-serif;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 6rem;
+        }
+
+        h2 {
+            font-size: 4.2rem;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--white);
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        </style>
+
         <link
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
